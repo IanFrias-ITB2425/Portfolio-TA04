@@ -1,55 +1,125 @@
 <!DOCTYPE html>
-<html lang="ca">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Pàgina principal de la web">
-    <meta name="author" content="Grup 2">
-    <title>Pàgina Principal</title>
-    <link rel="stylesheet" src="estil.css">
+    <title>Mi Página Web</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        /* Estilos para la cabecera */
+        header {
+            background: u('') no-repeat center center/cover;
+            color: white;
+            text-align: center;
+            padding: 50px 0;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 3em;
+        }
+
+        header nav {
+            margin-top: 20px;
+        }
+
+        header nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.2em;
+        }
+
+        header nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* Estilos para el contenido */
+        .content {
+            padding: 50px;
+            text-align: center;
+        }
+
+        .content h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        .content p {
+            font-size: 1.2em;
+            color: #555;
+        }
+
+        /* Estilos para el pie de página */
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        footer .social-links {
+            margin-bottom: 20px;
+        }
+
+        footer .social-links a {
+            font-size: 1.5em;
+        }
+
+        footer .contact-info {
+            font-size: 1.1em;
+        }
+    </style>
 </head>
 <body>
 
+    <!-- Cabecera -->
     <header>
-        <img src="" alt="Logo">
-        <h1>Pàgina Principal</h1>
+        <img src="https://via.placeholder.com/100" alt="Logo" />
+        <h1>Mi Página Web</h1>
         <nav>
-            <a href="index.html">Inici</a>
-            <a href="projectes.html">Projectes</a>
-            <a href="contacte.html">Contacte</a>
+            <a href="#proyectos">Más Proyectos</a>
+            <a href="#contacto">Contacto</a>
+            <a href="#sobre">Sobre mí</a>
         </nav>
     </header>
-    <main>
-        <section>
-            <h2>Benvingut a la meva web</h2>
-            <p>Aquesta és la pàgina principal del meu lloc web. Aquí pots trobar informació sobre els meus projectes i contactar amb mi.</p>
-        </section>
 
-        <section>
-            <h2>Sobre els meus projectes</h2>
-            <article>
-                <h3>Projecte A</h3>
-                <p>Descripció del Projecte A...</p>
-            </article>
-            <article>
-                <h3>Projecte B</h3>
-                <p>Descripció del Projecte B...</p>
-            </article>
-        </section>
+    <!-- Contenido -->
+    <div class="content" id="proyectos">
+        <h2>Mis Proyectos</h2>
+        <p>Aquí puedes ver algunos de los proyectos en los que he trabajado:</p>
+        <p><a href="#">Proyecto 1</a></p>
+        <p><a href="#">Proyecto 2</a></p>
+        <p><a href="#">Proyecto 3</a></p>
+    </div>
 
-        <aside>
-            <h3>Informació adicional</h3>
-            <p>Aquí pots posar enllaços, notícies o altres informació rellevant.</p>
-        </aside>
-    </main>
-
-    <footer>
-        <p>&copy; 2024 Grup 2. Tots els drets reservats.</p>
-        <p>
-            <a href="#">Facebook</a> | 
-            <a href="#">Twitter</a> | 
-            <a href="#">Instagram</a>
-        </p>
+    <!-- Pie de página -->
+    <footer id="contacto">
+        <div class="social-links">
+            <a href="#" title="Facebook">Facebook</a>
+            <a href="#" title="Twitter">Twitter</a>
+            <a href="#" title="Instagram">Instagram</a>
+        </div>
+        <div class="contact-info">
+            <p>Teléfono: +34 123 456 789</p>
+            <p>Correo: contacto@tupagina.com</p>
+        </div>
     </footer>
 
 </body>
